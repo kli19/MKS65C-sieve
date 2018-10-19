@@ -4,7 +4,7 @@ run :
 	./a.out
 clean: 
 	rm *.o
-	rm *~
+	rm a.out
 sieve.o: sieve.c sieve.h
 	gcc -c sieve.c 
 demo.o: demo.c sieve.h
