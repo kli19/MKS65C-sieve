@@ -15,7 +15,3 @@ int * generateArray(int n){
   return arr;
 }
 
-int main(){
-  int * arr = generateArray(20);
-  return 0;
-}
