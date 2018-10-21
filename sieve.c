@@ -5,6 +5,7 @@
 
 int size = 0;
 
+//generates an array of size sufficient to calculate the nth prime
 char * generateArray(int n){
   if (n>5000){
     size = (int)(1.15 * n * log(n));
@@ -18,6 +19,7 @@ char * generateArray(int n){
   return arr;
 }
 
+//prints array
 void print_arr(char * arr){
   for (int i = 0; i < size; i++){
     printf("%d: %d\n", i, arr[i]);
@@ -25,6 +27,7 @@ void print_arr(char * arr){
 
 }
 
+//finds the nth prime
 int sieve(int n){
   char * arr = generateArray(n);
   for (int i = 2; i < size; i++){
