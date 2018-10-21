@@ -31,7 +31,7 @@ void print_arr(char * arr){
 int sieve(int n){
   int current_Prime = 2;
   char * arr = generateArray(n);
-  for (int i = 2; i < size; i++){
+  for (int i = 2; i*i < size; i++){
     if (!arr[i]){
       for (int j = i+i; j < size; j+=i){
 	arr[j] = 1;
@@ -45,7 +45,7 @@ int sieve(int n){
       n--;
     }
     if(!n){
-      //print_arr(arr);
+      print_arr(arr);
       return i;
     }
   }
