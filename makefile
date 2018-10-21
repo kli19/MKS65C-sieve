@@ -1,7 +1,8 @@
 all : sieve.o demo.o
 	gcc sieve.o demo.o -lm
 run :
-	./a.out
+	./a.out $(args)
+
 clean: 
 	rm *.o
 	rm a.out
