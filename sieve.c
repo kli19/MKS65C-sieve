@@ -29,7 +29,7 @@ void print_arr(char * arr){
 
 //finds the nth prime
 int sieve(int n){
-  int current_Prime = 2;
+  //int current_Prime = 2;
   char * arr = generateArray(n);
   for (int i = 2; i*i < size; i++){
     if (!arr[i]){
